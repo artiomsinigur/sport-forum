@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Material icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Affichage d’un seul sujet</title>
+	</head>
+<body>
+	<main>
+		<section class="show-thread">
+			<div class="container-fluid">
+				<h1 class="title my-4">Affichage d’un seul sujet</h1>
+				
+				<!-- Le sujet
+				================================ -->
+				<div class="thread">
+					<div class="card shadow-sm mb-4">
+						<div class="card-header">
+							<div class="row">
+								<div class="col-auto">
+									<td class="card-avatar">
+										<img class="card-avatar-img rounded-circle" src="https://placeimg.com/60/60/people" alt="">
+									</td>
+								</div>
+								<div class="col ml-n2">
+									<h2 class="card-title h5 mb-1 mt-2">Makleyn22</h2>
+									<p class="card-time small text-muted mb-0">
+										<i class="material-icons md-18 mr-1 align-bottom">access_time</i>
+										<time datatime="2019-09-14">Sep 14, 2019</time>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Competently predominate scalable applications before enterprise systems. Uniquely myocardinate strategic relationships through interdependent scenarios. Globally integrate sticky intellectual capital vis-a-vis premium data. Intrinsicly maximize unique process improvements for professional "outside the box" thinking. Rapidiously actualize out-of-the-box e-services rather than open-source products. Proactively maintain prospective human capital after 24/365 web-readiness. Globally enable e-business quality vectors.</p>
+						</div>
+					</div>
+				</div><!-- /end thread -->
+
+				<!-- Les discussions 
+				=================================-->
+				<div class="comment shadow-sm border rounded-lg bg-white mb-4">
+					<div class="row no-gutters">
+						<div class="col-auto">
+							<div class="comment-profile border-right">
+								<div class="card-img-top">
+									<img src="https://placeimg.com/150/100/people" alt="" class="comment-avatar">
+								</div>
+								<ul class="list-group list-group-flush mb-0 pl-0">
+									<li class="list-group-item text-center p-2">
+										<h3 class="comment-name h5 text-primary mb-1">Bond007</h3>
+										<p class="comment-last-visit small text-muted mb-0">Connecté il y a<br><span>Sep 16, 2019</span></p>
+									</li>
+									<li class="list-group-item d-flex justify-content-between p-2">
+										<p class="comment-joined text-muted mb-0">Adhéré</p>
+										<span>Sep 18, 2019</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between p-2">
+										<p class="comment-messages text-muted mb-0">Messages</p>
+										<span>1,304</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="comment-body p-3">
+								<div class="row no-gutters">
+									<div class="col">
+										<p class="comment-published text-muted small mb-0">Daté publié <time>Sep 16, 2019 20:18</time></p>
+									</div>
+									<div class="col-auto">
+										<a href="" class="comment-id-post">#</a>
+									</div>
+								</div>
+								<p class="comment-text">Credibly maintain B2B testing procedures rather than professional initiatives. Competently facilitate error-free synergy and.</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- /end comment -->
+
+				<div class="thread-footer">
+					<div class="row">
+						<div class="col">
+							<ul class="comment-bar pagination">
+								<li class="page-item"><a class="page-link" href="#">Précedent</a></li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+							</ul>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-primary" type="button" value="" data-toggle="modal" data-target="#modalReply">Répondre</button>
+						</div>
+					</div>
+				</div>
+				
+			</div><!-- /end container -->
+		</section>
+	</main>
+
+
+	<!-- Fenêtre modale avec le formulaire 
+	================================-->
+	<div class="modal fade" tabindex="-1" role="dialog" id="modalReply" aria-labelledby="modalReply" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title h5">Création d’une nouvelle réponse</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" id="formReply">
+						<!-- <div class="form-group">
+							<label for="fieldTitle">Titre</label>
+							<input type="email" class="form-control" id="fieldTitle" aria-describedby="title" placeholder="Entrez un titre">
+						</div> -->
+						<div class="form-group">
+							<label for="fieldText">Texte</label>
+							<textarea class="form-control" id="fieldText" rows="3" placeholder="Votre texte..."></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit">Publier</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- /end fenêtre modale -->
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

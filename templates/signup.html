@@ -1,0 +1,109 @@
+<!-- <?php
+    $username = $_POST['username'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $email2 = $_POST['email2'] ?? '';
+    $lname = $_POST['lname'] ?? '';
+    $fname = $_POST['fname'] ?? '';
+?> -->
+<!doctype html>
+<html lang="fr" style="height: 100%">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project PHP Mon blog">
+    <meta name="author" content="Artiom, Walid">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+    <!-- Font Awesome's CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <title>Inscription</title>
+    </head>
+    <body class="d-flex flex-column align-items-center bg-light" style="height: 100%; font-size: .875rem">
+        <!-- Inscription
+        ============================== -->
+        <div class="signup container mx-auto p-4" style="max-width: 500px">
+            <h1 class="h3 mb-3 font-weight-normal text-center">Inscription</h1>
+            <p class="text-center">Vous avez déjà un compte ?<a href="index.php?action=formSignin"> Se connecter</a></p>
+            <form action="" method="POST">
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="fpseudo">Pseudo *</label>
+                            <input class="form-control form-control-lg" type="text" name="username" id="fpseudo" value="<?=$username?>">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="fmdp">Mot de pass *</label>
+                            <input class="form-control form-control-lg" type="password" name="pass" id="fmdp">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="fmdp2">Confirmation du mot de pass *</label>
+                            <input class="form-control form-control-lg" type="password" name="pass2" id="fmdp2">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="femail">Email *</label>
+                            <input class="form-control form-control-lg" type="email" name="email" id="femail" value="<?=$email?>">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="femail2">Confirmation de l'email *</label>
+                            <input class="form-control form-control-lg" type="email" name="email2" id="femail2" value="<?=$email2?>">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="fnom">Votre nom</label>
+                            <input class="form-control form-control-lg" type="text" name="lname" id="fnom" value="<?=$lname?>">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="fprenom">Votre prénom</label>
+                            <input class="form-control form-control-lg" type="text" name="fname" id="fprenom" value="<?=$fname?>">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-lg btn-block my-3 bg-primary" type="submit" name="action" value="signup">M'inscrire</button>
+                <p class="text-muted text-center">Les champs obligatoires sont marqués par un astérisque (*)</p>
+            </form>
+
+            <!-- Revenir à la page d'accueil
+            ====================================== -->
+            <div class="page-index mb-3 text-center">
+                <a href="index.php">Revenir à la page d'accueil</a>
+            </div>
+
+            <div class="errors">
+                <!-- <?php if(isset($errors)): ?>
+                    <?php foreach($errors as $error): ?>
+                        <div class="alert alert-danger">
+                            <?=$error?>
+                        </div>
+                    <?php endforeach;?>
+                <?php endif;?> -->
+            </div>
+
+            <p class="text-black-50 text-center" style="font-size: .875rem">Développé par <strong>Sinigur Artiom</strong> et <strong>Walid Drihem</strong></p>
+        </div><!-- /end signup -->
+    </body>
+</html>

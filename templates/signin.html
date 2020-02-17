@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr" style="height: 100%">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project PHP Mon blog">
+    <meta name="author" content="Artiom, Walid">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+    <!-- Font Awesome's CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <title>Connexion</title>
+    </head>
+    <body class="d-flex flex-column align-items-center bg-light" style="height: 100%">
+        <!-- Connexion
+        ============================== -->
+        <div class="signin container mx-auto text-center p-4" style="max-width: 400px">
+            <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
+            <p>Nouvel utilisateur ?<a href="index.php?action=formSignup"> S'inscrire</a></p>
+            
+            <form action="" method="POST">
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control form-control-lg" name="username" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Mot de pass">
+                </div>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block mb-4 bg-primary" name="action" value="signin">Se connecter</button>
+            </form>
+
+            <!-- Revenir à la page d'accueil
+            ====================================== -->
+            <div class="page-index mb-3">
+                <a href="index.php">Revenir à la page d'accueil</a>
+            </div>
+
+            <div class="errors">
+                <!-- <?php if(isset($errors)): ?>
+                    <?php foreach($errors as $error): ?>
+                        <div class="alert alert-danger">
+                            <?=$error?>
+                        </div>
+                    <?php endforeach;?>
+                <?php endif;?> -->
+            </div>
+
+            <p class="mb-0 text-black-50" style="font-size: .875rem">Développé par <strong>Sinigur Artiom</strong> et <strong>Walid Drihem</strong></p>
+        </div><!-- /end signin -->
+    </body>
+</html>

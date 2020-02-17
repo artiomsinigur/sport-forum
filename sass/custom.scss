@@ -1,0 +1,138 @@
+// ========================== //
+// Costumiser les couleurs
+// ========================== //
+$gray-200: #e9ecef;
+$gray-400: #ced4da;
+$gray-600: #6c757d;
+$gray-800: #343a40;
+$black:    #000;
+
+
+$enable-gradients:      true;
+$border-color:          $gray-200;
+$card-border-color:     $gray-200;
+$table-border-color:    $border-color;
+$list-group-border-color: $gray-200;
+
+$border-radius-sm:      0;
+$border-radius:         .25rem;
+$box-shadow-sm:         0 .25rem .5rem rgba($black, .05);
+
+$font-size-base:        1rem;
+$font-size-sm:          $font-size-base * .8;
+
+
+// ========================== //
+// Global style
+// ========================== //
+// Mobile, Tablet
+html, body {
+    font-size: $font-size-sm;
+    color: red;
+}
+
+// Desktop
+@media (min-width: 992px) {
+    html, body {
+        font-size: $font-size-base;
+    }
+}
+
+// Extra large écran
+@media (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1140px;        
+    }
+}
+
+// Style material design google
+.material-icons.md-18 {font-size: 18px;}
+.material-icons.md-24 {font-size: 24px;}
+.material-icons.md-30 {font-size: 30px;}
+
+
+// ========================== //
+// Main style
+// ========================== //
+@media (min-width: 768px) {
+    // Layout dashboard
+  .dashboard .navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+  }
+
+  .dashboard .navbar-nav {
+    width: 100%;
+  }
+
+  .dashboard .main-content,
+  .dashboard .dashboard-footer {
+    margin-left: 200px;
+  }
+}
+
+// Table
+thead th:first-child,
+tbody td:first-child {
+    padding-left: 1.3rem;
+}
+
+thead th:not(:first-child),
+tbody td:not(:first-child) {
+    text-align: center;
+}
+
+thead th:last-child,
+tbody td:last-child {
+    padding-right: 1.3rem;
+    text-align: right;
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+    padding-right: 1.3rem;
+    text-align: left;
+}
+
+// =========================== //
+// Page d'accueil
+// =========================== //
+.page-threads thead th:first-child,
+.page-threads tbody th:first-child {
+    width: 30px;
+}
+
+.trend-category .card-img {
+    backdrop-filter: sepia(90%);
+}
+
+main.page-header > h1 {
+  margin-top: 0 !important;
+}
+
+
+
+// =========================== //
+// Dasboard
+// =========================== //
+@media (min-width: 992px) {
+    html, body {
+        font-size: $font-size-base;
+    }
+}
+.admin-threads thead th:nth-last-child(-n+2),
+.admin-threads tbody td:nth-last-child(-n+2) {
+    width: 10%;
+}
+
+
+// =========================== //
+// Page comment
+// =========================== //
+.comment .comment-profile {
+    font-size: $font-size-base * .85;
+    max-width: 150px;
+}

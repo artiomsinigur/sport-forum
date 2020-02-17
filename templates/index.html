@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Material icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Sport forum</title>
+	</head>
+<body>
+	<!-- Navigation principale 
+	===================================-->
+	<header class="page-header header-navbar">
+		<nav class="navbar navbar-expand-md bg-dark text-white">
+			<div class="container-fluid">
+				<a href="" class="navbar-brand">logo</a>
+		
+				<!-- Icon burger -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="material-icons md-30 text-white">menu</i></span>
+				</button>
+		
+				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+					<ul class="navbar-nav order-md-1">
+
+						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalThread">Ajouter</button>
+
+
+						<!-- Menu déroulant categories 
+						===================================-->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-white" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Gategories
+							</a>
+							<div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+								<a href="" class="dropdown-item">Hockey</a>
+								<a href="" class="dropdown-item">Soccer</a>
+								<a href="" class="dropdown-item">Football</a>
+								<a href="" class="dropdown-item">Baseball</a>
+							</div>
+						</li><!-- end categories -->
+		
+
+						<!-- Menu déroulant authentification
+						=====================================-->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-white" href="#" id="autenticationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Authentification
+							</a>
+							<div class="dropdown-menu" aria-labelledby="autenticationDropdown">
+								<a href="signin.html" class="dropdown-item">Se connecter</a>
+								<a href="signup.html" class="dropdown-item">S'inscrire</a>
+							</div>
+						</li><!-- /end authentication -->
+					</ul>
+		
+
+					<!-- Champ rechercher 
+					====================================-->
+					<div class="order-md-0">
+						<form action="" method="GET" id="formSearch">
+							<div class="form-inline">
+								<input type="text" class="form-control form-control-sm col-8 bg-light rounded-left border-0" aria-describedby="search" placeholder="Rechercher">
+								<button type="submit" class="btn btn-sm btn-primary col-4 rounded-right">Réchercher</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav><!-- /end navbar -->
+	</header><!-- /end header-navbar -->
+
+	<main class="main-content bg-light">
+		<!-- Contenu principale 
+		===================================-->
+		<div class="jumbotron jumbotron-fluid p-5 mb-0 bg-primary text-white">
+			<div class="container-fluid">
+				<h1 class="forum-title display-4">Sport Forum</h1>
+				<p class="forum-lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			</div>
+		</div>
+
+		<div class="container-fluid py-5">
+			<div class="row">
+				<!-- Contenu principale
+				===================================== -->
+				<div class="col">
+					<!-- Les tendance
+					=====================================-->
+					<section class="trend-category">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card mb-4 shadow-sm">
+									<div class="card-body">
+										<h2 class="card-title">Forum Hockey</h2>
+										<p class="card-text">Le hockey sur glace, appelé le plus souvent hockey, est un sport d’équipe se jouant sur une patinoire spécialement aménagée. L’objectif de chaque équipe est de marquer des buts en envoyant un disque de caoutchouc à l’intérieur du but adverse.</p>
+										<a href="list-threads.html" class="btn btn-outline-primary btn-more">Aller au forum</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card mb-4 shadow-sm">
+									<div class="card-body">
+										<h2 class="card-title">Forum Soccer</h2>
+										<p class="card-text">Le soccer est un sport collectif qui se joue principalement au pied avec un ballon sphérique. Il oppose deux équipes de onze joueurs dans un stade, que ce soit sur un terrain gazonné ou sur un plancher. L'objectif de chaque camp est de mettre le ballon dans le but adverse.</p>
+										<a href="" class="btn btn-outline-primary btn-more">Aller au forum</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card mb-4 shadow-sm">
+									<div class="card-body">
+										<h2 class="card-title">Forum Football</h2>
+										<p class="card-text">Le football américain est un sport collectif opposant deux équipes de onze joueurs qui alternent entre la défense et l'attaque. Le but du jeu est de marquer des points en portant ou lançant le ballon jusqu'à la zone d'en-but adverse.</p>
+										<a href="" class="btn btn-outline-primary btn-more">Aller au forum</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card mb-4 shadow-sm">
+									<div class="card-body">
+										<h2 class="card-title">Forum Baseball</h2>
+										<p class="card-text">Le baseball est un sport collectif dérivé des mêmes racines que le cricket, qui se pratique sur un terrain de gazon et de sable. Il se joue avec des battes pour frapper une balle lancée, et des gants pour rattraper la balle.</p>
+										<a href="" class="btn btn-outline-primary btn-more">Aller au forum</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- /end trend-category -->
+
+
+					<!-- Liste des sujets/threads 
+					=====================================-->
+					<section class="page-threads">
+						<h2 class="thread-title my-4">Liste des sujets</h2>
+
+						<ul class="thread-bar pagination">
+							<li class="page-item"><a class="page-link" href="#">Précedent</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+						</ul>
+
+						<div class="table-responsive shadow-sm bg-white">
+							<table class="table table-sm mb-0 table-hover border table-borderless">
+								<thead class="border-bottom bg-dark text-white">
+									<tr>
+										<th class="py-3" scope="col" class="head-avatar"></th>
+										<th class="py-3" scope="col" class="head-topic">Sujet</th>
+										<th class="py-3" scope="col" class="head-author">Auteur</th>
+										<th class="py-3" scope="col" class="head-post">Messages</th>
+										<th class="py-3" scope="col" class="head-view">Vues</th>
+										<th class="py-3" scope="col" class="head-last-post">Dernier message</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-bottom">
+										<td class="thread-avatar">
+											<img class="thread-avatar-img" src="https://placeimg.com/35/35/any" alt="">
+										</td>
+										<td class="thread-title">
+											<a href="thread.html" class="thread-topic-name">Lorem ipsom dolar purt an san meltor</a>
+										</td>
+										<td class="thread-author">
+											<a href="" class="thread-author-profile d-block">Makleyn22</a>
+											<span class="thread-author-published"><small>Sep 18, 2019</small></span>
+										</td>
+										<td class="thread-posts">
+											<span class="thread-count-posts">158</span>
+										</td>
+										<td class="thread-views">
+											<span class="thread-count-views">3,560</span>
+										</td>
+										<td class="thread-last-post">
+											<a href="" class="thread-last-post-author d-block">JemsBond007</a>
+											<span class="thread-last-post-published"><small>Sep 18, 2019</small></span>
+										</td>
+									</tr><!-- /end table row -->
+									<tr class="border-bottom">
+										<td class="thread-avatar">
+											<img class="thread-avatar-img" src="https://placeimg.com/35/35/any" alt="">
+										</td>
+										<td class="thread-title">
+											<a href="" class="thread-topic-name">Lorem ipsom dolar purt an san meltor</a>
+										</td>
+										<td class="thread-author">
+											<a href="" class="thread-author-profile d-block">Makleyn22</a>
+											<span class="thread-author-published"><small>Sep 18, 2019</small></span>
+										</td>
+										<td class="thread-posts">
+											<span class="thread-count-posts">158</span>
+										</td>
+										<td class="thread-views">
+											<span class="thread-count-views">3,560</span>
+										</td>
+										<td class="thread-last-post">
+											<a href="" class="thread-last-post-author d-block">JemsBond007</a>
+											<span class="thread-last-post-published"><small>Sep 18, 2019</small></span>
+										</td>
+									</tr><!-- /end table row -->
+								</tbody>
+							</table>
+						</div>
+					</section><!-- /end threads -->
+				</div><!-- /end block gauche --> 
+
+
+				<!-- Barre latérale
+				===================================== -->
+				<div class="col-lg-auto">
+					<aside class="page-stats ">
+						<h3 class="page-stats-title pb-2 pt-0">Forum statistiques</h3>
+						<div class="card border-0 mb-4 shadow-sm">
+							<!-- <div class="card-header">
+							</div> -->
+							<ul class="list-group">
+								<li class="list-group-item topics d-flex justify-content-between align-items-center">
+									Sujets
+									<span class="badge badge-primary badge-pill bgoutline">326</span>
+								</li>
+								<li class="list-group-item posts d-flex justify-content-between align-items-center">
+									Messages
+									<span class="badge badge-primary badge-pill bgoutline">1639</span>
+								</li>
+								<li class="list-group-item members d-flex justify-content-between align-items-center">
+									Membres
+									<span class="badge badge-primary badge-pill bgoutline">2340</span>
+								</li>
+							</ul>
+							<!-- <div class="card-body">
+							</div> -->
+						</div>
+					</aside>
+				</div><!-- /end aside -->
+				
+			</div><!-- /end row -->
+		</div><!-- /end main-content-body -->
+	</main>
+
+
+	<!-- Fenêtre modale pour créer un sujet 
+	================================-->
+	<div class="modal fade" tabindex="-1" role="dialog" id="modalThread" aria-labelledby="modalThread" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title h5">Création d’un nouveau sujet</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" id="formThread">
+						<div class="form-group">
+							<label for="fieldTitle">Titre*</label>
+							<input type="email" class="form-control" id="fieldTitle" aria-describedby="title" placeholder="Entrez un titre">
+						</div>
+						<div class="form-group">
+							<label for="fieldText">Texte*</label>
+							<textarea class="form-control" id="fieldText" rows="3" placeholder="Votre texte..."></textarea>
+						</div>
+						<select class="custom-select">
+							<option selected>Selecter une catégorie*</option>
+							<option value="1">Hockey</option>
+							<option value="2">Soccer</option>
+							<option value="3">Football</option>
+							<option value="4">Baseball</option>
+						</select>
+						<small class="text-muted d-block mt-4">Tous les champs avec un astérisque(*) sont obligatoires!</small>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit">Publier</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- /end fenêtre modale -->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
